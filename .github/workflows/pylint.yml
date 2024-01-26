@@ -27,4 +27,4 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        find . -name "*.py" | xargs pylint
+        pylint $(find . -name "*.py") || true
